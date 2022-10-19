@@ -1,0 +1,7 @@
+poem = input('Введите первую строку любого стихотворения : ')
+length = len(poem)
+print(length)
+start = int(input('Enter a starting number : '))
+end = int(input('Enter an end number : '))
+part = (poem[start:end])
+print(part)
