@@ -5,15 +5,24 @@ class Car:
         self.yearofissue = yearofissue
         self.speed = speed
     def speedhigh(self):
-        print('Увеличение скорости на 5 = ', self.speed + 5)
+        self.speed += 5
     def speedsmall(self):
-        print('Уменьшение скорости на 5 = ', self.speed - 5)
+        self.speed -= 5
     def speedstop(self):
-        print('Движение задним ходом', self.speed == 0)
+        self.speed = 0
+    def speedback(self):
+        self.speed = self.speed * -1
+    def printspeed(self):
+        print(self.speed)
 car = Car('BMW','X7',2021, 120)
 car.speedhigh()
+car.printspeed()
 car.speedsmall()
+car.printspeed()
+car.speedback()
+car.printspeed()
 car.speedstop()
+car.printspeed()
 print(car.brand)
 print(car.model)
 print(car.yearofissue)
